@@ -46,7 +46,7 @@ body #head-section .head-content .menu .tab-list li a:hover {
   color: #e68750;
 }
 body #head-section .input-card {
-  height: 200px;
+  height: 45%;
   width: 80%;
   margin: auto;
   background-color: white;
