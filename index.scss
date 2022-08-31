@@ -1,0 +1,113 @@
+//define the standard variables for the website
+$primary-color: #ffff;
+$secondary-color: #000;
+$tertiary-color: #3b956e;
+$quaternary: #e68750;
+
+body {
+  background-color: $primary-color;
+  position: relative;
+  .logout {
+    text-decoration: none;
+    color: #000;
+    color: $secondary-color;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  #head-section {
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    .head-content {
+      width: 90%;
+      justify-content: center;
+      position: relative;
+      .menu {
+        display: flex;
+        .tab-list {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          list-style: none;
+          width: 100%;
+          height: 100%;
+          .list-bar {
+            font-size: 1.5em;
+          }
+
+          li {
+            a {
+              text-decoration: none;
+              color: $secondary-color;
+              font-size: 1.5em;
+              font-weight: bold;
+            }
+            a:hover {
+              color: $quaternary;
+            }
+          }
+        }
+        
+      }
+     
+    }
+     .input-card{
+        height: 200px;
+        width: 80%;
+        margin: auto; 
+        background-color: $primary-color;
+        box-shadow: 2px 0px 10px 0px ( $secondary-color);
+          .input-card-head{
+            span{
+                font-size: 2em;
+                font-weight: bold;
+                color: $tertiary-color;
+                padding-left: 5%;
+                 align-self: center;
+
+            }
+            a{
+                text-decoration: none;
+                 align-self: center;
+                color: $secondary-color;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: $quaternary;
+                padding-right: 3%;
+
+            }
+          }
+          .input-card-body{
+            .form-search{
+              display: flex;
+              justify-content: space-evenly;
+              padding-top: 1.5%;
+              margin: 0px,30px;
+                 select{
+                    width: 25%;
+                    height: 70px;
+                    color: $secondary-color;
+                    border-radius: 0;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    
+                 }
+            }
+          }
+
+      }
+    .head-green{
+      background-color: $tertiary-color;
+      width: 100%;
+      height: 35%;
+      position: absolute;
+      top: 1;
+      left: 0;
+      bottom: 0;
+      z-index: -10;
+    }
+  }
+}

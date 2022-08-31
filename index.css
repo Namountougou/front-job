@@ -1,0 +1,94 @@
+body {
+  background-color: white;
+  position: relative;
+}
+body .logout {
+  text-decoration: none;
+  color: #000;
+  color: #000;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+body #head-section {
+  width: 100%;
+  height: 550px;
+  margin: auto;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+}
+body #head-section .head-content {
+  width: 90%;
+  justify-content: center;
+  position: relative;
+}
+body #head-section .head-content .menu {
+  display: flex;
+}
+body #head-section .head-content .menu .tab-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+body #head-section .head-content .menu .tab-list .list-bar {
+  font-size: 1.5em;
+}
+body #head-section .head-content .menu .tab-list li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+body #head-section .head-content .menu .tab-list li a:hover {
+  color: #e68750;
+}
+body #head-section .input-card {
+  height: 200px;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 2px 0px 10px 0px #000;
+}
+body #head-section .input-card .input-card-head span {
+  font-size: 2em;
+  font-weight: bold;
+  color: #3b956e;
+  padding-left: 5%;
+  align-self: center;
+}
+body #head-section .input-card .input-card-head a {
+  text-decoration: none;
+  align-self: center;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e68750;
+  padding-right: 3%;
+}
+body #head-section .input-card .input-card-body .form-search {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1.5%;
+  margin: 0px, 30px;
+}
+body #head-section .input-card .input-card-body .form-search select {
+  width: 25%;
+  height: 70px;
+  color: #000;
+  border-radius: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+body #head-section .head-green {
+  background-color: #3b956e;
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  top: 1;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+}/*# sourceMappingURL=index.css.map */
