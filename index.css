@@ -1,26 +1,32 @@
 body {
   background-color: white;
-  position: relative;
 }
 body .logout {
   text-decoration: none;
   color: #000;
-  color: #000;
   font-size: 1.4em;
   font-weight: bold;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 body #head-section {
   width: 100%;
-  height: 550px;
+  height: 750px;
   margin: auto;
-  z-index: -1;
   display: flex;
   flex-direction: column;
 }
 body #head-section .head-content {
-  width: 90%;
-  justify-content: center;
-  position: relative;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1%;
+  z-index: 2;
+  background: white;
 }
 body #head-section .head-content .menu {
   display: flex;
@@ -42,13 +48,16 @@ body #head-section .head-content .menu .tab-list li a {
   font-size: 1.5em;
   font-weight: bold;
 }
-body #head-section .head-content .menu .tab-list li a:hover {
+body #head-section .head-content .menu .tab-list li a:hover,
+body #head-section .head-content .menu .tab-list li a:active {
   color: #e68750;
 }
 body #head-section .input-card {
-  height: 45%;
+  height: 38%;
   width: 80%;
+  z-index: 1;
   margin: auto;
+  position: static;
   background-color: white;
   box-shadow: 2px 0px 10px 0px #000;
 }
@@ -71,24 +80,142 @@ body #head-section .input-card .input-card-head a {
 body #head-section .input-card .input-card-body .form-search {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 1.5%;
-  margin: 0px, 30px;
+  padding-top: 3%;
+  margin: 0px, 60px;
 }
 body #head-section .input-card .input-card-body .form-search select {
   width: 25%;
-  height: 70px;
-  color: #000;
+  height: 85px;
+  color: rgba(120, 119, 119, 0.936);
   border-radius: 0;
-  font-size: 1.1em;
+  background-color: white;
+  font-size: 1.4em;
   font-weight: bold;
+  padding-left: 20px;
+  box-shadow: 0px 0px 5px 0px rgb(55, 54, 54);
 }
 body #head-section .head-green {
   background-color: #3b956e;
-  width: 100%;
+  width: 99vw;
   height: 35%;
   position: absolute;
   top: 1;
   left: 0;
   bottom: 0;
-  z-index: -10;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #head-section .head-green .title {
+  font-size: 4.5em;
+  color: white;
+  font-weight: bold;
+  padding-left: 5%;
+  align-self: center;
+  margin-top: 3%;
+}
+body #head-section .head-green .menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5%;
+}
+body #head-section .head-green .menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+body #head-section .head-green .menu ul .list-bar {
+  font-size: 1em;
+  color: white;
+}
+body #head-section .head-green .menu ul li {
+  padding: 0px 2px;
+}
+body #head-section .head-green .menu ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+body #head-section .head-green .menu ul li a:hover,
+body #head-section .head-green .menu ul li :focus {
+  color: #e68750;
+}
+body .body {
+  position: absolute;
+  height: auto;
+  margin-top: 10%;
+  background: #3b956e;
+}
+body .body .body-content {
+  width: 100%;
+  display: grid;
+  grid: 300px/1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+body .body .body-content .grid-item {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  list-style: none;
+}
+body .body .body-content .grid-item .titre {
+  padding-top: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+body .body .body-content .grid-item .libelle {
+  font-size: 1.1em;
+  padding-top: 28px;
+  color: white;
+}
+body .foot-body {
+  background-color: #3b956e;
+  height: 15%;
+  position: absolute;
+  margin-top: 25%;
+}
+body .foot-body .foot-content {
+  display: grid;
+  grid: 75px/1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+body .foot-body .foot-content .grid-item {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  list-style: none;
+}
+body .foot-body .foot-content .grid-item .titre {
+  padding-top: 5px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+body .foot-body .foot-content .grid-item .title {
+  padding-top: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+body .charte {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  position: absolute;
+  top: 100%;
 }/*# sourceMappingURL=index.css.map */

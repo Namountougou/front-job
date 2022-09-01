@@ -6,25 +6,30 @@ $quaternary: #e68750;
 
 body {
   background-color: $primary-color;
-  position: relative;
   .logout {
     text-decoration: none;
-    color: #000;
     color: $secondary-color;
     font-size: 1.4em;
     font-weight: bold;
+    position: sticky;
+    top: 0;
+    background: $primary-color;
   }
   #head-section {
     width: 100%;
-    height: 550px;
+    height: 750px;
     margin: auto;
-    z-index: -1;
+
     display: flex;
     flex-direction: column;
     .head-content {
-      width: 90%;
-      justify-content: center;
-      position: relative;
+      width: 100%;
+      justify-content: space-around;
+      display: flex;
+      position: sticky;
+        top: 1%;
+        z-index: 2;
+        background: $primary-color;
       .menu {
         display: flex;
         .tab-list {
@@ -45,7 +50,8 @@ body {
               font-size: 1.5em;
               font-weight: bold;
             }
-            a:hover {
+            a:hover,
+            a:active {
               color: $quaternary;
             }
           }
@@ -53,9 +59,11 @@ body {
       }
     }
     .input-card {
-      height: 45%;
+      height: 38%;
       width: 80%;
+      z-index: 1;
       margin: auto;
+      position: static;
       background-color: $primary-color;
       box-shadow: 2px 0px 10px 0px ($secondary-color);
       .input-card-head {
@@ -80,28 +88,164 @@ body {
         .form-search {
           display: flex;
           justify-content: space-evenly;
-          padding-top: 1.5%;
-          margin: 0px, 30px;
+          padding-top: 3%;
+          margin: 0px, 60px;
           select {
             width: 25%;
-            height: 70px;
-            color: $secondary-color;
+            height: 85px;
+            color: rgba(120, 119, 119, 0.936);
             border-radius: 0;
-            font-size: 1.1em;
+            background-color: $primary-color;
+            font-size: 1.4em;
             font-weight: bold;
+            padding-left: 20px;
+            box-shadow: 0px 0px 5px 0px rgb(55, 54, 54);
           }
         }
       }
     }
     .head-green {
       background-color: $tertiary-color;
-      width: 100%;
+      width: 99vw;
       height: 35%;
-      position: absolute;
+       position: absolute;
       top: 1;
       left: 0;
       bottom: 0;
-      z-index: -10;
+      box-sizing: content-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-size: 4.5em;
+        color: $primary-color;
+
+        font-weight: bold;
+        padding-left: 5%;
+        align-self: center;
+        margin-top: 3%;
+      }
+      .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 5%;
+
+        ul {
+          display: flex;
+          align-items: center;
+          list-style: none;
+
+          .list-bar {
+            font-size: 1em;
+            color: $primary-color;
+          }
+          li {
+            padding: 0px 2px;
+
+            a {
+              text-decoration: none;
+              font-size: 1.5em;
+              font-weight: bold;
+              color: $primary-color;
+            }
+            a:hover,
+            :focus {
+              color: $quaternary;
+            }
+          }
+        }
+      }
     }
+  
+  }
+  .body{
+    position: absolute;
+    height: auto;
+    margin-top: 10%;
+    background: $tertiary-color;
+
+        .body-content{
+          width: 100%;
+          display: grid;
+          grid: 300px/ 1fr 1fr 1fr 1fr;
+          grid-gap: 10px;
+          padding: 10px;
+          padding-bottom: 10px;
+          
+             .grid-item{
+               border-radius: 5px;
+               padding: 5px;
+               font-size: 20px;
+               text-align: left;
+               color: $primary-color;
+                list-style: none;
+                .titre{
+                  padding-top: 25px;
+                  font-size: 1.2em;
+                  font-weight: bold;
+
+                }
+                .libelle{
+                  font-size: 1.1em;
+                  padding-top: 28px;
+                  color: $primary-color;
+                }
+
+                 
+
+             }
+        }
+
+  }
+  .foot-body{
+    background-color: $tertiary-color;
+    height: 15%;
+    position: absolute;
+    margin-top: 25%;
+    
+    
+       .foot-content{
+        display: grid;
+    grid: 75px/ 1fr 1fr 1fr ;
+    grid-gap: 10px;
+          padding: 10px;
+          margin-top: 2%;
+          display: flex;
+          justify-content: space-around;
+          .grid-item{
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+            text-align: left;
+            color: $primary-color;
+            list-style: none;
+             .titre{
+               padding-top: 5px;
+               font-size: 1.6em;
+               font-weight: bold;
+
+             }
+             .title{
+              padding-top: 15px;
+              font-size: 1.2em;
+              font-weight: bold;
+             }
+             
+
+          }
+       }
+  }
+  .charte{
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+    color: $primary-color;
+    position: absolute;
+    top: 100%;
+
   }
 }
